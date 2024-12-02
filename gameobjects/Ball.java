@@ -13,8 +13,7 @@ import danogl.util.Vector2;
 public class Ball extends BaseOfBall {
 
     /** The path to the ball image. */
-    private static final String BALL_IMAGE_PATH = "C:/Users/meita/Documents/university/y4s1/oop/ex2/oop_ex_2/" +
-            "assets/assets/ball.png";
+    private static final String BALL_IMAGE_PATH = "assets/ball.png";
 
     /**
      * Constructs a new MainBall.

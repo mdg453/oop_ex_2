@@ -14,8 +14,7 @@ import danogl.util.Vector2;
 public abstract class BaseOfPaddle extends GameObject {
 
     /** The path to the paddle image. */
-    private static final String PADDLE_IMAGE_PATH = "C:/Users/meita/Documents/university/y4s1/oop/ex2/oop_ex_2/" +
-            "assets/assets/paddle.png";
+    private static final String PADDLE_IMAGE_PATH = "assets/paddle.png";
     /** The size of the paddle. */
     private static final Vector2 PADDLE_SIZE = new Vector2(100, 15);
     /** The speed of the paddle. */

@@ -13,8 +13,7 @@ public abstract class BaseOfBall extends GameObject {
     // Constants
     protected static final float DEFAULT_MOVEMENT_SPEED = 200;
     protected static final Vector2 DEFAULT_SIZE = new Vector2(20, 20);
-    protected static final String COLLISION_SOUND_PATH = "C:/Users/meita/Documents/university/y4s1/oop/ex2/oop_ex_2/" + "" +
-            "assets/assets/Bubble5_4.wav";
+    protected static final String COLLISION_SOUND_PATH = "assets/Bubble5_4.wav";
 
     // Fields
     protected Sound collisionSound;

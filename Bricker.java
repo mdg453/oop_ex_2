@@ -20,8 +20,7 @@ public class Bricker extends GameManager {
 
     // Constants
     private static final int WALL_WIDTH = 50;
-    private static final String BACKGROUND_IMG_PATH = "C:/Users/meita/Documents/university/y4s1/oop/ex2/oop_ex_2/" +
-                "assets/assets/DARK_BG2_small.jpeg";
+    private static final String BACKGROUND_IMG_PATH = "assets/DARK_BG2_small.jpeg";
     private static final Vector2 DEFAULT_WINDOW_SIZE = new Vector2(700, 500);
     private static final int DEFAULT_BRICKS_PER_ROW = 8;
     private static final int DEFAULT_BRICKS_PER_COLUMN = 7;

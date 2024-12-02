@@ -8,8 +8,7 @@ import brick_strategies.CollisionStrategy;
 import brick_strategies.CollisionStrategyGenerator;
 
 public class Brick extends GameObject {
-    private static final String BRICK_IMAGE_PATH = "C:/Users/meita/Documents/university/y4s1/oop/ex2/oop_ex_2/" +
-            "assets/assets/brick.png";
+    private static final String BRICK_IMAGE_PATH = "assets/brick.png";
     private CollisionStrategy collisionStrategy;
 
     /**
