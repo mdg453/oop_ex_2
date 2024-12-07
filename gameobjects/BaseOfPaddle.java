@@ -16,12 +16,12 @@ public abstract class BaseOfPaddle extends GameObject {
     /** The path to the paddle image. */
     private static final String PADDLE_IMAGE_PATH = "assets/paddle.png";
     /** The size of the paddle. */
-    private static final Vector2 PADDLE_SIZE = new Vector2(100, 15);
+    protected static final Vector2 PADDLE_SIZE = new Vector2(100, 15);
     /** The speed of the paddle. */
-    private static final float MOVEMENT_SPEED = 400;
+    protected static final float MOVEMENT_SPEED = 400;
 
-    private final UserInputListener inputListener;
-    private final Vector2 windowSize;
+    protected final UserInputListener inputListener;
+    protected final Vector2 windowSize;
 
     /**
      * Constructs a new BaseOfPaddle with the given center.

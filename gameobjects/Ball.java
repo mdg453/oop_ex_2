@@ -38,4 +38,3 @@ public class Ball extends BaseOfBall {
                 mult(DEFAULT_MOVEMENT_SPEED));
     }
 }
-
