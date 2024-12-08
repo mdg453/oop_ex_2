@@ -1,11 +1,12 @@
 package gameobjects;
 
+import danogl.collisions.Layer;
 import danogl.gui.ImageReader;
 import danogl.GameObject;
 import danogl.gui.UserInputListener;
 import danogl.util.Vector2;
-import gameobjects.BaseOfBall;
 import utils.AddGameObject;
+import utils.RemoveGameObject;
 import utils.RemoveGameObject;
 
 public class ExtraPaddle extends BaseOfPaddle {
@@ -47,13 +48,22 @@ public class ExtraPaddle extends BaseOfPaddle {
         }
         collisions--;
         if (collisions == 0) {
-            removeGameObject.remove(this); // Remove the paddle from the game
+            removeGameObject.remove(this, Layer.DEFAULT); // Use the appropriate layer
+
         }
     }
 
     /**
      * Initializes the extra paddle with collision count and placement.
      */
+//    public void initialize() {
+//        if (collisions > 0) {
+//            return; // Already initialized
+//        }
+//        collisions = COLLISIONS_BEFORE_DISAPPEARING;
+//        setCenter(windowSize.mult(0.5f)); // Center the paddle
+//        addGameObject.add(this); // Add to the game
+//    }
     public void initialize() {
         if (collisions > 0) {
             return; // Already initialized

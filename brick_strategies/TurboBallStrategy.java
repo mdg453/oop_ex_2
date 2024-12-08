@@ -1,7 +1,6 @@
 package brick_strategies;
 
 import danogl.GameObject;
-import danogl.collisions.Collision;
 import gameobjects.TurboBall;
 import utils.RemoveGameObject;
 

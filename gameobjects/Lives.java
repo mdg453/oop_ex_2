@@ -24,6 +24,9 @@ public class Lives extends GameObject {
     private final GameObject textObject;
     private final ImageRenderable heartImage;
     private GameObject[] hearts = new GameObject[0];
+    public static final int MAX_LIVES = 5;
+
+
 
     /**
      * Construct a new Lives instance.
@@ -52,6 +55,7 @@ public class Lives extends GameObject {
         addGameObject.add(textObject, Layer.UI);
         updateLives();
     }
+
 
     /**
      * Updates the text displaying the number of lives.

@@ -1,9 +1,6 @@
 package gameobjects;
 import danogl.gui.rendering.RectangleRenderable;
 import java.awt.Color;
-
-
-
 import danogl.GameObject;
 import danogl.gui.rendering.Renderable;
 import danogl.util.Vector2;

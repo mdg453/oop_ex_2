@@ -28,6 +28,15 @@ public class TurboBall extends Ball {
         this.turboCollisionCounter = 0;
     }
 
+//    public void activateTurboMode() {
+//        if (isTurboModeActive) return;
+//
+//        isTurboModeActive = true;
+//        turboCollisionCounter = 0;
+//        setVelocity(getVelocity().mult(TURBO_SPEED_FACTOR));
+//        renderer().setRenderable(turboRenderable);
+//    }
+
     public void activateTurboMode() {
         if (isTurboModeActive) return;
 
@@ -37,6 +46,11 @@ public class TurboBall extends Ball {
         renderer().setRenderable(turboRenderable);
     }
 
+    private void deactivateTurboMode() {
+        isTurboModeActive = false;
+        setVelocity(getVelocity().mult(1 / TURBO_SPEED_FACTOR));
+        renderer().setRenderable(normalRenderable);
+    }
     @Override
     public void onCollisionEnter(GameObject other, danogl.collisions.Collision collision) {
         super.onCollisionEnter(other, collision);
@@ -49,12 +63,12 @@ public class TurboBall extends Ball {
         }
     }
 
-    private void deactivateTurboMode() {
-        isTurboModeActive = false;
-        setVelocity(getVelocity().mult(1 / TURBO_SPEED_FACTOR));
-
-        renderer().setRenderable(normalRenderable);
-    }
+//    private void deactivateTurboMode() {
+//        isTurboModeActive = false;
+//        setVelocity(getVelocity().mult(1 / TURBO_SPEED_FACTOR));
+//
+//        renderer().setRenderable(normalRenderable);
+//    }
 
     public boolean isTurboModeActive() {
         return isTurboModeActive;
